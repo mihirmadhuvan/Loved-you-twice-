@@ -1,53 +1,64 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>For You ❤️</title>
+      <h3>Memory Gallery</h3>
 
-  <style>
-    body{
-      background: pink;
-      text-align:center;
-      font-family: Arial;
-      padding-top:100px;
-    }
+      <div class="gallery-grid">
 
-    h1{
-      color:white;
-      font-size:60px;
-    }
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?q=80&w=1200&auto=format&fit=crop" alt="memory">
+        </div>
 
-    p{
-      color:white;
-      font-size:25px;
-    }
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=1200&auto=format&fit=crop" alt="memory">
+        </div>
 
-    button{
-      padding:15px 30px;
-      border:none;
-      border-radius:20px;
-      font-size:20px;
-      cursor:pointer;
-    }
-  </style>
-</head>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1518199266791-5375a83190b7?q=80&w=1200&auto=format&fit=crop" alt="memory">
+        </div>
 
-<body>
+      </div>
+    </section>
 
-  <h1>I Love You ❤️</h1>
 
-  <p>
-    Every moment with you feels special.
-  </p>
+    <!-- SURPRISES -->
 
-  <button onclick="showMessage()">
-    Click Me
-  </button>
+    <section id="surprises" class="content-section fade-up">
+      <h3>Hidden Surprises ❤️</h3>
 
-  <script>
-    function showMessage(){
-      alert("You are the best thing in my life ❤️");
-    }
-  </script>
+      <div class="surprise-grid">
 
+        <div class="surprise-card" onclick="revealMessage(1)">
+          Open When You Miss Me
+        </div>
+
+        <div class="surprise-card" onclick="revealMessage(2)">
+          Open When You Feel Sad
+        </div>
+
+        <div class="surprise-card" onclick="revealMessage(3)">
+          Open For A Secret
+        </div>
+
+      </div>
+
+      <div id="secret-message"></div>
+    </section>
+
+
+    <!-- FINAL MESSAGE -->
+
+    <section class="ending fade-up">
+      <h2>
+        No matter where life goes...
+      </h2>
+
+      <p>
+        I will always choose you ❤️
+      </p>
+    </section>
+
+  </main>
+
+
+  <script src="script.js"></script>
 </body>
 </html>
