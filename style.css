@@ -1,0 +1,74 @@
+*{
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.surprise-card:hover{
+  background:#ff4d88;
+}
+
+#secret-message{
+  margin-top:40px;
+  text-align:center;
+  font-size:1.2rem;
+}
+
+
+/* ENDING */
+
+.ending{
+  text-align:center;
+  padding:120px 20px;
+}
+
+.ending h2{
+  font-size:3rem;
+  margin-bottom:20px;
+}
+
+
+/* HEARTS */
+
+.heart{
+  position:fixed;
+  bottom:-20px;
+  color:#ff4d88;
+  animation:floatHeart linear forwards;
+  z-index:1;
+}
+
+@keyframes floatHeart{
+  to{
+    transform:translateY(-120vh);
+    opacity:0;
+  }
+}
+
+
+/* ANIMATION */
+
+.fade-up{
+  opacity:0;
+  transform:translateY(40px);
+  transition:1s;
+}
+
+.fade-up.show{
+  opacity:1;
+  transform:translateY(0);
+}
+
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+  .hero h2{
+    font-size:3rem;
+  }
+
+  .content-section h3{
+    font-size:2rem;
+  }
+
+}
